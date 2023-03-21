@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Mevcut ViewData degeri => @ViewData["sayi"]</h2>
+
+
+
+<h1>
+    
+    @((ViewData["egitmen"] as Egitmen).Isim)
+
+</h1>
+
+
+<h3>@((TempData["testVerisi"] as Egitmen).Isim)</h3>
